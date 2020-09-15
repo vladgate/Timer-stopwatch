@@ -65,7 +65,7 @@
          this.btnPlusHours.Text = "+";
          this.btnPlusHours.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnPlusHours.UseVisualStyleBackColor = false;
-         this.btnPlusHours.Click += new System.EventHandler(this.plus1_Click);
+         this.btnPlusHours.Click += new System.EventHandler(this.btnPlusHour_Click);
          // 
          // btnPlusMinutes
          // 
@@ -78,7 +78,7 @@
          this.btnPlusMinutes.Text = "+";
          this.btnPlusMinutes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnPlusMinutes.UseVisualStyleBackColor = false;
-         this.btnPlusMinutes.Click += new System.EventHandler(this.plus2_Click);
+         this.btnPlusMinutes.Click += new System.EventHandler(this.btnPlusMinute_Click);
          // 
          // btnPlusSeconds
          // 
@@ -91,7 +91,7 @@
          this.btnPlusSeconds.Text = "+";
          this.btnPlusSeconds.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnPlusSeconds.UseVisualStyleBackColor = false;
-         this.btnPlusSeconds.Click += new System.EventHandler(this.plus3_Click);
+         this.btnPlusSeconds.Click += new System.EventHandler(this.btnPlusSecond_Click);
          // 
          // btnMinusSeconds
          // 
@@ -104,7 +104,7 @@
          this.btnMinusSeconds.Text = "-";
          this.btnMinusSeconds.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnMinusSeconds.UseVisualStyleBackColor = false;
-         this.btnMinusSeconds.Click += new System.EventHandler(this.minus3_Click);
+         this.btnMinusSeconds.Click += new System.EventHandler(this.btnMinusSecond_Click);
          // 
          // btnMinusMinutes
          // 
@@ -117,7 +117,7 @@
          this.btnMinusMinutes.Text = "-";
          this.btnMinusMinutes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnMinusMinutes.UseVisualStyleBackColor = false;
-         this.btnMinusMinutes.Click += new System.EventHandler(this.minus2_Click);
+         this.btnMinusMinutes.Click += new System.EventHandler(this.btnMinusMinute_Click);
          // 
          // btnMinusHours
          // 
@@ -130,7 +130,7 @@
          this.btnMinusHours.Text = "-";
          this.btnMinusHours.TextAlign = System.Drawing.ContentAlignment.TopCenter;
          this.btnMinusHours.UseVisualStyleBackColor = false;
-         this.btnMinusHours.Click += new System.EventHandler(this.minus1_Click);
+         this.btnMinusHours.Click += new System.EventHandler(this.btnMinusHour_Click);
          // 
          // btnSetCoundown
          // 
@@ -142,7 +142,7 @@
          this.btnSetCoundown.TabStop = false;
          this.btnSetCoundown.Text = "Set Coundown";
          this.btnSetCoundown.UseVisualStyleBackColor = true;
-         this.btnSetCoundown.Click += new System.EventHandler(this.SetCountdown_Click);
+         this.btnSetCoundown.Click += new System.EventHandler(this.btnSetCountdown_Click);
          // 
          // label1
          // 
@@ -184,7 +184,7 @@
          this.btnCancel.TabStop = false;
          this.btnCancel.Text = "Cancel";
          this.btnCancel.UseVisualStyleBackColor = true;
-         this.btnCancel.Click += new System.EventHandler(this.button1_Click);
+         this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
          // 
          // CountdownForm
          // 

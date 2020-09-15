@@ -11,11 +11,10 @@ namespace Timer
       string Countdown { get; set; }
       event EventHandler SetCountdownClick;
       event EventHandler CancelClick;
-      event EventHandler PlusHourClick;
-      event EventHandler MinusHourClick;
-      event EventHandler PlusMinuteClick;
-      event EventHandler MinusMinuteClick;
-      event EventHandler PlusSecondClick;
-      event EventHandler MinusSecondClick;
+      event EventHandler<SetTimerEventArgs> PlusClick;
+      event EventHandler<SetTimerEventArgs> MinusClick;
+      void ShowViewDialog();
+      void Close();
+      bool SetCoundownEnabled { get; set; }
    }
 }

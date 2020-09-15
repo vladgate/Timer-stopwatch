@@ -8,8 +8,11 @@ namespace Timer
 {
    public interface IMainView
    {
-      string Time { get; set; }
-      event EventHandler StartClick;
+      string Time { set; }
+      string StartLabel { set; }
+      bool TimerEnabled { set; }
+
+      event EventHandler StartStopClick;
       event EventHandler ResetClick;
       event EventHandler TimerClick;
    }

@@ -6,18 +6,21 @@ using System.Windows.Forms;
 
 namespace Timer
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+   static class Program
+   {
+      /// <summary>
+      /// The main entry point for the application.
+      /// </summary>
+      [STAThread]
+      static void Main()
+      {
+         Application.EnableVisualStyles();
+         Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MainForm());
-        }
-    }
+         MainForm view = new MainForm();
+         TimerModel model = new TimerModel();
+         MainPresenter mainPresenter = new MainPresenter(view, model);
+         Application.Run(view);
+      }
+   }
 }

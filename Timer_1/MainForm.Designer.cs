@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-         this.components = new System.ComponentModel.Container();
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
          this.btnStart = new System.Windows.Forms.Button();
          this.btnReset = new System.Windows.Forms.Button();
-         this.timer = new System.Windows.Forms.Timer(this.components);
          this.txtTime = new System.Windows.Forms.Label();
          this.lblHours = new System.Windows.Forms.Label();
          this.lblMinutes = new System.Windows.Forms.Label();
@@ -48,7 +46,7 @@
          this.btnStart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
          this.btnStart.Name = "btnStart";
          this.btnStart.UseVisualStyleBackColor = false;
-         this.btnStart.Click += new System.EventHandler(this.Start_Click);
+         this.btnStart.Click += new System.EventHandler(this.btnStartStop_Click);
          // 
          // btnReset
          // 
@@ -56,11 +54,7 @@
          resources.ApplyResources(this.btnReset, "btnReset");
          this.btnReset.Name = "btnReset";
          this.btnReset.UseVisualStyleBackColor = false;
-         this.btnReset.Click += new System.EventHandler(this.Reset_Click);
-         // 
-         // timer
-         // 
-         this.timer.Tick += new System.EventHandler(this.timer_Tick);
+         this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
          // 
          // txtTime
          // 
@@ -94,7 +88,7 @@
          this.btnTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
          this.btnTimer.Name = "btnTimer";
          this.btnTimer.UseVisualStyleBackColor = false;
-         this.btnTimer.Click += new System.EventHandler(this.button1_Click);
+         this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
          // 
          // MainForm
          // 
@@ -112,7 +106,6 @@
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
          this.MaximizeBox = false;
          this.Name = "MainForm";
-         this.Shown += new System.EventHandler(this.Form1_Shown);
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -122,7 +115,6 @@
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label txtTime;
         private System.Windows.Forms.Label lblHours;
         private System.Windows.Forms.Label lblMinutes;
